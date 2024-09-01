@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Price Tracker</h1>
+        <form id="urlForm">
+            <label for="productUrl">Enter Product URL:</label>
+            <input type="text" id="productUrl" name="productUrl" placeholder="https://example.com/product" required>
+            <button type="submit">Track Price</button>
+        </form>
+
+        <div id="priceSection">
+            <h2>Current Price</h2>
+            <p id="currentPrice">$0.00</p>
+        </div>
+
+        <div id="chartSection">
+            <h2>Price Trend</h2>
+            <canvas id="priceChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
